@@ -29,3 +29,4 @@ def new_feedback(request):
         # the method is get and  by the button of the html file of new_feedback you will get the form and ready to fill it
         form = FeedbackForm()
     return render(request, 'feedback/new_feedback.html', {'form':form}) #form:form is the context variable
+
