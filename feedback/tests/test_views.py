@@ -24,7 +24,7 @@ class FeedbackFormTest(TestCase):
         self.assertTemplateUsed(response, 'feedback/new_feedback.html')
 
     def test_template_post(self):
-        response = self.client.post('/new/')
+        response = self.client.post('/new')
         self.assertTemplateNotUsed(response, 'feedback/new_feedback.html')
 
         
